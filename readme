@@ -1,0 +1,54 @@
+基于composer搭建php框架
+一、前提：
+1.需要先安装php
+
+二、
+1.安装composer
+下载composer-setup.php
+https://getcomposer.org/doc/00-intro.md
+然后运行 
+php composer-setup.php --install-dir=bin
+将composer安装到bin目录下
+
+2.更新composer
+composer update
+
+3.创建composer.json文件
+{
+  "require": {
+  }
+}
+
+3. 再更新composer
+composer update
+这一步会在工程根目录下生成下列文件和目录：
+vendor/autoload.php
+vendor/composer
+vendor/composer/autoload_classmap.php
+vendor/composer/autoload_namespaces.php
+vendor/composer/autoload_psr4.php
+vendor/composer/autoload_real.php
+vendor/composer/autoload_static.php
+vendor/composer/ClassLoader.php
+vendor/composer/installed.json
+vendor/composer/LICENSE
+
+4.引入 第三方的路由包noahbuscher/macaw，其官网：https://github.com/NoahBuscher/Macaw
+配置composer.json
+"require": {
+    "noahbuscher/macaw": "dev-master"
+  }
+运行 composer update 再更新composer 
+
+5.在public目录的index.php中引入composer的自动加载功能 
+
+
+
+
+
+
+
+
+
+
+
